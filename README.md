@@ -1,2 +1,2 @@
 # viber-rest
-A php wrapper for for Viber rest API
+A php wrapper for Viber rest API
