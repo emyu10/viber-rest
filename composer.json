@@ -1,0 +1,22 @@
+{
+    "name": "emyu/viber-rest",
+    "type": "library",
+    "description": "A PHP wrapper around Viber REST API.",
+    "keywords": ["viber", "http", "rest", "web service"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mohamed Usman",
+            "email": "emyu10@gmail.com",
+            "homepage": "https://github.com/emyu10"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^6.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "emyu\\Viber\\": "src/"
+        }
+    }
+}
