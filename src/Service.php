@@ -38,7 +38,7 @@ class Service implements ServiceInterface
             return false;
         }
     }
-    public function unsetWebhook();
+    public function unsetWebhook(){}
     public function sendMessage(
         $receiver,
         MessageTypeInterface $type,
@@ -47,14 +47,15 @@ class Service implements ServiceInterface
         $trackingData = null,
         KeyboardInterface $keyboard = null,
         $minApiVersion = null
-    );
-    public function getAccountInfo();
-    public function getUserDetails($userId);
-    public function getOnlineUsers(array $userIds);
+    )
+    {}
+    public function getAccountInfo(){}
+    public function getUserDetails($userId){}
+    public function getOnlineUsers(array $userIds){}
     public function post(
         $from,
         MessageTypeInterface $type,
         $senderName = null,
         $senderAvatar = null
-    );
+    ){}
 }
