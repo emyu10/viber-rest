@@ -9,7 +9,7 @@ interface ServiceInterface
     const RESOURCE_URL = 'https://chatapi.viber.com/pa/';
 
     public function __construct($authToken);
-    public function setWebhook($webhookUrl);
+    public function setWebhook($webhookUrl, array $eventTypes);
     public function unsetWebhook();
     public function sendMessage(
         $receiver,
