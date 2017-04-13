@@ -38,7 +38,9 @@ class Service implements ServiceInterface
             return false;
         }
     }
-    public function unsetWebhook(){}
+    public function unsetWebhook(){
+        echo 'this is the body';
+    }
     public function sendMessage(
         $receiver,
         MessageTypeInterface $type,
@@ -48,14 +50,24 @@ class Service implements ServiceInterface
         KeyboardInterface $keyboard = null,
         $minApiVersion = null
     )
-    {}
-    public function getAccountInfo(){}
-    public function getUserDetails($userId){}
-    public function getOnlineUsers(array $userIds){}
+    {
+        echo 'this is the body';
+    }
+    public function getAccountInfo(){
+        echo 'this is the body';
+    }
+    public function getUserDetails($userId){
+        echo 'this is the body';
+    }
+    public function getOnlineUsers(array $userIds){
+        echo 'this is the body';
+    }
     public function post(
         $from,
         MessageTypeInterface $type,
         $senderName = null,
         $senderAvatar = null
-    ){}
+    ){
+        echo 'this is the body';
+    }
 }
