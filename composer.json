@@ -1,5 +1,5 @@
 {
-    "name": "emyu/viber-rest",
+    "name": "emyu10/viber-rest",
     "type": "library",
     "description": "A PHP wrapper around Viber REST API.",
     "keywords": ["viber", "http", "rest", "web service"],
