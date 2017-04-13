@@ -54,6 +54,7 @@ class Service implements ServiceInterface
         echo 'this is the body';
     }
     public function getAccountInfo(){
+        echo 'this is another body';
         echo 'this is the body';
     }
     public function getUserDetails($userId){
