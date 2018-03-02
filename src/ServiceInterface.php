@@ -9,7 +9,7 @@ interface ServiceInterface
     const RESOURCE_URL = 'https://chatapi.viber.com/pa/';
 
     public function __construct($authToken);
-    public function setWebhook($webhookUrl, array $eventTypes);
+    public function setWebhook($webhookUrl, array $eventTypes = null);
     public function unsetWebhook();
     public function sendMessage(
         $receiver,
@@ -17,16 +17,15 @@ interface ServiceInterface
         $senderName,
         $senderAvatar = null,
         $trackingData = null,
-        KeyboardInterface $keyboard = null,
         $minApiVersion = null
     );
-    public function getAccountInfo();
-    public function getUserDetails($userId);
-    public function getOnlineUsers(array $userIds);
-    public function post(
-        $from,
-        MessageTypeInterface $type,
-        $senderName = null,
-        $senderAvatar = null
-    );
+    // public function getAccountInfo();
+    // public function getUserDetails($userId);
+    // public function getOnlineUsers(array $userIds);
+    // public function post(
+    //     $from,
+    //     MessageTypeInterface $type,
+    //     $senderName = null,
+    //     $senderAvatar = null
+    // );
 }
